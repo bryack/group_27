@@ -1,0 +1,500 @@
+   45  vim script_ts1.sh
+   46  mkdir cycle
+   47  cd ~/YandexDisk/QA/Linux/
+   48  ls la
+   49  ls -lat
+   50  mkdir HW
+   51  cd HW
+   52  mkdir d1, d2, d3
+   53  ls
+   54  rm -r d1 d2 d3
+   55  rm -r d1, d2,
+   56  mkdir HW1 HW2 HW3
+   57  cd HW1
+   58  touch file.txt file1.txt file2.txt file3.json file4.json
+   59  mkdir folder folder1 folder2
+   60  ls -la
+   61  vim file.txt 
+   62  cd ./
+   63  cd .\
+   64  cd ..
+   65  cd -
+   66  mv --help
+   67  mv -i file.txt ..
+   68  mv -i file1.txt ../HW2
+   69  mv ../file.txt 
+   70  cd ..
+   71  ls
+   72  mv file.txt HW1
+   73  cd ../HW2
+   74  cd ~/YandexDisk/QA/Linux/HW/HW2
+   75  mv file1.txt ~/YandexDisk/QA/Linux/HW/HW1
+   76  mv file.txt file1.txt ..
+   77  cd ..
+   78  cd HW1
+   79  ls
+   80  mv file.txt file1.txt ..
+   81  touch file{5..8}.txt
+   82  touch file-{..3}.txt
+   83  touch file_{0..3}.txt
+   84  cd ..
+   85  HW2
+   86  cd HW2
+   87  touch file_0.txt file1.txt file2.txt file3.json file4.json
+   88  rm file_0.txt file1.txt file2.txt file3.json file4.json
+   89  touch file_0.txt file_1.txt file_2.txt file_3.json file_4.json
+   90  cd ..
+   91  cd HW3
+   92  touch file_{0..3}.txt file{4..5}.json
+   93  mkdir folder_0 folder_1 folder_2
+   94  cd ..
+   95  cd HW2
+   96  mkdir folder_{0..2}
+   97  cd ..
+   98  cd HW1
+   99   cp file_2.txt file_3.json ../HW2
+  100   cp file_2.txt file_3.json ../HW4
+  101  find
+  102  find .
+  103  find . -print
+  104  find -name "file*"
+  105  find -name "*.txt"
+  106  cd ..
+  107  vim file_0.txt 
+  108  vim file_1.txt 
+  109  cd ~/YandexDisk/QA/Linux/HW
+  110  tail -f file_0.txt 
+  111  tailf file_0.txt 
+  112  sudo tailf file_0.txt 
+  113  tail -f file_0.txt | grep баш
+  114  head file_0.txt 
+  115  head -n5 file_0.txt
+  116  tail file_0.txt 
+  117  less file_0.txt 
+  118  less file_0.txt 
+  119  date
+  120  curl http://162.55.220.72:5005/terminal-hw-request
+  121  curl  http://162.55.220.72:5005/get_method?name=(Anna_Nurgaleeva)&age=(32)
+  122  curl  http://162.55.220.72:5005/get_method
+  123  curl http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"
+  124  curl http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]
+  125  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=32","result":["Your_String","Your_number"]
+  126  32
+  127  name
+  128  age
+  129  Your_String
+  130  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=32,"result":["Your_String","Your_number"]
+  131  curl http://162.55.220.72:5005/get_method?"name=Anna_Nurgaleeva&age=32","result":["Your_String","Your_number"]
+  132  curl http://162.55.220.72:5005/get_method"?name=Anna_Nurgaleeva&age=32","result":["Your_String","Your_number"]
+  133  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=32","result":["Your_String","Your_number"]
+  134  name
+  135  curl  http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]
+  136  curl --data "name=Anna_Nurgaleeva&age=32" http://162.55.220.72:5005/get_method
+  137  curl --data "name=Anna_Nurgaleeva&age=32" http://162.55.220.72:5005/get_method?
+  138  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age="32","result":["Your_String","Your_number"]
+  139  curl http://162.55.220.72:5005/get_method?[name=Anna_Nurgaleeva&age="32"],"result":["Your_String","Your_number"]
+  140  curl http://162.55.220.72:5005/get_method?{name=Anna_Nurgaleeva&age="32"},"result":["Your_String","Your_number"]
+  141  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age="32","result":["Your_String","Your_number"]
+  142  which bash
+  143  vim script_hw.sh
+  144  vim script_hw.sh
+  145  ./script_hw.sh 
+  146  vim script_hw.sh
+  147  cat script_hw.sh 
+  148  curl http://162.55.220.72:5005/terminal-hw-request
+  149  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva_&age=32","result":["Your_String","Your_number"]
+  150  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva_&age=32","result":["Your_String","Your_number"]
+  151  result
+  152  curl curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age="32","result":["Your_String","Your_number"
+  153  clear
+  154  cd ~/YandexDisk/QA/Linux
+  155  mkdir cycle
+  156  cd cycle/
+  157  curl http://162.55.220.72:5005/terminal-hw-request
+  158  curl curl http://162.55.220.72:5005/terminal-hw-request [Anna_Nurgaleeva] [32]
+  159  curl curl http://162.55.220.72:5005/terminal-hw-request [Anna_Nurgaleeva] [32]
+  160  clear
+  161  curl http://162.55.220.72:5005/terminal-hw-request
+  162  curl http://162.55.220.72:5005/get_method [Anna_Nurgaleeva] [32]
+  163  curl http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=30"
+  164  curl "http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=30"
+  165  clear
+  166  which bash
+  167  vim script_cy.sh
+  168  ./script_cy.sh 
+  169  ls -lat
+  170  rm file2.txt file3.txt
+  171  ls -lat
+  172  ./script_cy.sh 
+  173  rm file{1..2}.txt
+  174  ls -la
+  175  cp script_cy.sh script_cy2.sh 
+  176  vim script_cy2.sh 
+  177  ./script_cy2.sh 
+  178  vim script_cy2.sh 
+  179  cd ..
+  180  ls -la
+  181  cd -
+  182  ./script_cy.sh 
+  183  ./script_cy2.sh 
+  184  vim script_cy.sh 
+  185  vim script_cy2.sh 
+  186  ./script_cy2.sh 
+  187  ./script_cy.sh 
+  188  ./script_cy2.sh 
+  189  vim script_cy3.sh
+  190  which bash
+  191  vim script_cy3.sh
+  192  ./script_cy3.sh
+  193  which bash
+  194  vim script_cy_ts.sh
+  195  ./script_cy_ts.sh
+  196  vim script_cy_ts.sh
+  197  ./script_cy_ts.sh
+  198  vim script_cy_ts.sh
+  199  vim script_cy_ts1.sh 
+  200  cat script_cy2.sh 
+  201  cat script_cy3.sh 
+  202  vim script_cy_ts1.sh 
+  203  clear
+  204  cd ..
+  205  cd ..
+  206  mkdir 1102
+  207  cd 1102
+  208  mkdir f_{1..3}
+  209  ls -lat
+  210  touch file.txt
+  211  cd ..
+  212  ls -r
+  213  ls -lar
+  214  cd -
+  215  cd ..
+  216  cd Linux
+  217  ls -la
+  218  cd HW
+  219  ls -la
+  220  cat file_0.txt 
+  221  cat > tt.txt
+  222  cat tt.txt 
+  223  ls -la
+  224  cat > tt1.txt
+  225  cat > tt2.txt
+  226  cat tt1.txt tt2.txt 
+  227  cat tt2.txt 
+  228  cat -b tt1.txt 
+  229  cat - tt1.txt 
+  230  cat -n tt1.txt 
+  231  history
+  232  history > hist.txt
+  233  ls -lat
+  234  cat > tt3.txt
+  235  cat tt2.txt 
+  236  cat >> tt2.txt 
+  237  cat tt2.txt 
+  238  cat >> tt2.txt 
+  239  cat -s tt2.txt 
+  240  cat >> tt2.txt 
+  241  cat -s tt2.txt 
+  242  cat -n tt2.txt 
+  243  cat tt2.txt | less
+  244  cat tt1.txt 
+  245  cat tt2.txt >> tt1.txt 
+  246  cat tt1.txt 
+  247  cat tt1.txt > tt3.txt 
+  248  cat tt3.txt 
+  249  cat tt3.txt | sort
+  250  cat >> tt3.txt 
+  251  cat > tt4.txt
+  252  cat tt1.txt tt2.txt > tt4.txt
+  253  cat tt4.txt 
+  254  ls -la
+  255  cd HW2
+  256  cat > xx.txt
+  257  cat > yy.txt
+  258  cd ..
+  259  cat > HW2/ccc.txt
+  260  cd -
+  261  cat > ../ttt.txt
+  262  cd ..
+  263  ls -lat
+  264  find -name ttt*
+  265  find -name ccc*
+  266  find -name file*
+  267  find -name file_*
+  268  find -name file*.*
+  269  grep 2 *
+  270  grep -r 2*
+  271  ls -la
+  272  grep 222 *
+  273  grep -r 222
+  274  cp tt1.txt HW2/ttt1.txt
+  275  grep -r 222
+  276  cp tt4.txt HW2/ttt4.txt
+  277  grep -r 222
+  278  grep -r 222*
+  279  curl http://162.55.220.72:5005/terminal-hw-request\
+  280  curl http://162.55.220.72:5005/terminal-hw-request
+  281  curl "http://162.55.220.72:5005/get_method [Anna_Nurgaleeva] [32]"
+  282  curl "http://162.55.220.72:5005/get_method?name=(Anna_Nurgaleeva)&age=(32)"
+  283  curl "http://162.55.220.72:5005/get_method?name=Anna_Nurgaleeva&age=32"
+  284  cd /c/Users/Ann/YandexDisk/QA/Linux/HW
+  285  mv file_{0..1}.txt ../HW2
+  286  cd HW1
+  287  mv file_{0..1}.txt ../HW2
+  288  cd ..
+  289  mv HW1/file_{0..1}.txt HW2
+  290  HW1
+  291  cd HW1
+  292  cd ..
+  293  mkdir HW3
+  294  cd HW1
+  295  cp file_{2..3} ..
+  296  cp file_{2..3}.* ..
+  297  cp HW1/file_{2..3}.* ../HW2
+  298  pwd
+  299  cd /c/Users/Ann/YandexDisk/QA/Linux/cycle
+  300  cat script_cy.sh 
+  301  cat script_cy_ts.sh 
+  302  cat script_cy_ts1.sh 
+  303  clea
+  304  cat script_cy.sh 
+  305  cat script_cy2.sh 
+  306  cat script_cy3.sh 
+  307  cat script_cy_ts.sh 
+  308  touch f1.txt f2.txt
+  309  cat >> f1.txt
+  310  cat f2.txt
+  311  cat >> f2.txt
+  312  cat f1.txt >> f2.txt
+  313  cat f1.txt
+  314  cat f2.txt
+  315  cat script_cy2.sh >> script_cy.sh
+  316  cat script_cy.sh 
+  317  cat script_cy3.sh >> script_cy.sh 
+  318  cat script_cy.sh 
+  319  cat script_cy_ts.sh >> script_cy.sh 
+  320  cat script_cy.sh 
+  321  vim script_cy.sh 
+  322  ccat script_cy.sh 
+  323  bat script_cy.sh 
+  324  bat
+  325  vim script_cy.sh 
+  326  install --help
+  327  install bat
+  328  install /Bat/bat-v0.19.0-x86_64-pc-windows-msvc/bat-v0.19.0-x86_64-pc-windows-msvc/bat.exe
+  329  /Bat/bat-v0.19.0-x86_64-pc-windows-msvc/bat-v0.19.0-x86_64-pc-windows-msvc/autocomplete/_bat.ps1
+  330  bat
+  331  clear
+  332  cd /c/Users/Ann/YandexDisk/QA/Linux/cycle
+  333  less script_cy.sh 
+  334  clear
+  335  git
+  336  git --version
+  337  cd /d/Documents/First_F
+  338  git init
+  339  ls -la
+  340  cd .git
+  341  ls -lat
+  342  cd ..
+  343  git status
+  344  git add index.html
+  345  git status
+  346  git rm --cached index.html
+  347  git status
+  348  git status
+  349  git add .
+  350  git status
+  351  git status
+  352  git status
+  353  git add index.html
+  354  git status
+  355  clear
+  356  git commit -m "first commit"
+  357  git config
+  358  git config --list
+  359  git config user.name
+  360  git config --global user.name "Anna Nurgaleeva"
+  361  git config --list
+  362  git config --global user.email bryacka@gmail.com
+  363  git config --list
+  364  cd ..
+  365  git status 
+  366  mkdir test
+  367  cd test
+  368  git clone https://github.com/bryack/test.git
+  369  cd test
+  370  git status 
+  371  touch file1.txt
+  372  git status 
+  373  cat >> file1.txt 
+  374  git add file1.txt 
+  375  git status 
+  376  git add file1.txt 
+  377  git status 
+  378  git commit -m "test commit 1"
+  379  git status 
+  380  git push
+  381  git status 
+  382  cat file1.txt 
+  383  git fetch
+  384  git status 
+  385  git pull
+  386  git status 
+  387  cat file1.txt 
+  388  git log
+  389  git log --author Anna Nurgaleeva
+  390  git log --author "Anna Nurgaleeva"
+  391  git show 4d11ac9fa9953340ea7b8789ea5db2586c98aaeb
+  392  git show
+  393  git blame file1.txt
+  394  git blame file1.txt | grep 123
+  395  git blame file1.txt | grep Anna
+  396  echo "Add Line" >> file1.txt 
+  397  cat file1.txt 
+  398  git status
+  399  git diff
+  400  git add
+  401  git add .
+  402  git status
+  403  git commit -m "Second commit"
+  404  git push
+  405  cd /c/Users/Ann/YandexDisk/QA/Linux/HW
+  406  mv /c/Users/Ann/YandexDisk/QA/Linux/HW/Нургалеева_HW_1_Terminal.md /d/Documents/test/test
+  407  cd -
+  408  git status 
+  409  git add Нургалеева_HW_1_Terminal.md 
+  410  git commit -m "My HW"
+  411  git push
+  412  ./script_ts.sh 
+  413  ./script_ts.sh 1
+  414  ./script_ts.sh 1
+  415  ./script_ts.sh 1
+  416  ./script_ts.sh 17
+  417  ./script_ts.sh 15
+  418  ./script_ts.sh 18
+  419  ./script_ts.sh 18
+  420  ./script_ts.sh 24
+  421  ./script_ts.sh 25
+  422  ./script_ts.sh 26
+  423  ./script_ts.sh 80
+  424  ./script_ts.sh 220
+  425  ./script_ts.sh 0
+  426  ./script_ts.sh -1
+  427  ./script_ts.sh
+  428  cd /c/Users/Ann/YandexDisk/QA/Linux/branch
+  429  cat script_br.sh 
+  430  cat script_br2.sh >> script_br.sh 
+  431  cat script_br.sh 
+  432  cat script_br1.sh >> script_br.sh 
+  433  cat script_br3.sh >> script_br.sh
+  434  cat script_br4.sh >> script_br.sh
+  435  cat script_br5.sh >> script_br.sh
+  436  cat script_br6.sh >> script_br.sh
+  437  cat script_br.sh 
+  438  cat script_br_el.sh 
+  439  cat script_br_elif.sh 
+  440  cat script_br_el.sh >> script_br.sh
+  441  cat script_br_elif.sh >> script_br.sh
+  442  cat script_ts.sh 
+  443  cat script_ts1.sh 
+  444  ./script_ts1.sh 1 
+  445  cat script_ts.sh >> script_br.sh
+  446  cat script_ts1.sh >> script_br.sh
+  447  vim script_br.sh 
+  448  cd /c/Users/Ann/YandexDisk/QA/Linux/habr
+  449  vim script_7.sh 
+  450  ./script_7.sh 
+  451  cd /c/Users/Ann/YandexDisk/QA/Linux/habr
+  452  vim script_7.sh 
+  453  ./script_7.sh 
+  454  vim script_7.sh 
+  455  vim script_7.sh 
+  456  ./script_7.sh 
+  457  vim script_7.sh 
+  458  touch if.md
+  459  vim script_7.sh 
+  460  vim script_8.sh 
+  461  ./script_8.sh 
+  462  vim script_8.sh 
+  463  ./script_8.sh 
+  464  vim script_8.sh 
+  465  vim script_8.sh 
+  466  ./script_8.sh 
+  467  vim script_8.sh 
+  468  ./script_8.sh 
+  469  vim script_8.sh 
+  470  ./script_8.sh 
+  471  ./script_8.sh 
+  472  clear
+  473  vim script_8.sh 
+  474  ./script_8.sh 
+  475  vim script_8.sh 
+  476  ./script_8.sh 
+  477  vim script_8.sh 
+  478  vim script_9.sh 
+  479  vim script_10.sh 
+  480  ls -la
+  481  ls -lat
+  482  cd /c/Users/Ann/YandexDisk/QA/Linux/habr
+  483  ./script_10.sh 
+  484  vim script_10.sh 
+  485  ./script_10.sh 
+  486  vim script_10.sh 
+  487  ./script_10.sh 
+  488  vim script_11.sh 
+  489  ./script_11.sh 
+  490  vim script_10.sh 
+  491  vim script_11.sh 
+  492  ./script_11.sh 
+  493  vim myfile.txt
+  494  sort myfile
+  495  sort myfile.txt
+  496  cat myfile.txt 
+  497  ls -lh
+  498  clear
+  499  git clone https://github.com/bryack/group_27.git
+  500  ls -la
+  501  cd group_27/
+  502  ls -la
+  503  clear
+  504  git status
+  505  vim user.txt
+  506  cat user.txt 
+  507  git status
+  508  git add user.txt 
+  509  cat pay_1.txt
+  510  cat >> pay_1.txt
+  511  cat pay_1.txt 
+  512  git status
+  513  git add .
+  514  git status
+  515  cat pay_2.txt >>
+  516  cat >> pay_2.txt 
+  517  git status
+  518  git add .
+  519  git status
+  520  cat >> pay_2.txt 
+  521  git status
+  522  git add .
+  523  git status
+  524  clear
+  525  git commit -m "add my files, please, dear github"
+  526  git status
+  527  git push
+  528  git config
+  529  git config --global
+  530  clear
+  531  cat >> pay_2.txt 
+  532  git status
+  533  git commit -am pay_2.txt "change 1 file"
+  534  git commit -am "change 1 file"
+  535  git status
+  536  git push
+  537  git history
+  538  git --help
+  539  history
+  540  cat history >> history_15.02.txt
+  541  cat >> history history_15_02.txt
+  542  touch history_15_02.txt
+  543  history 
+  544  history | cat >> history_15.02.txt 
