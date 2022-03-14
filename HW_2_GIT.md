@@ -85,10 +85,32 @@
     `git push`  
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main  
     Зайти на сайт [github](https://github.com/)  
-    Выбрать репозиторий [group_27](https://github.com/bryack/group_27)  
-    Нажать на кнопку `Compare & pull request`  
-    ![Compare & pull request](https://github.com/bryack/group_27/blob/Checklists/Compare_pull_request.png?raw=true)  
     
-нажимаем на кнопку
-в поле заголовка пишем Add new file checklist.md from Checklists branch
-10. Синхронизировать Внешнюю и Локальную ветки Main
+    Выбрать репозиторий [group_27](https://github.com/bryack/group_27)  
+    
+    Нажать на кнопку `Compare & pull request`  
+    ![Compare & pull request](https://github.com/bryack/group_27/blob/Checklists/Compare_pull_request.png?raw=true)    
+    
+    Под заголовком Open a pull request должно быть указано `Able to merge`  
+    ![Able to merge](https://github.com/bryack/group_27/blob/main/Able_to%20merge.png?raw=true)  
+    
+    В текстовом поле заголовка написать *Add new file checklist.md from Checklists branch*  
+    
+    Нажать на кнопку `Create pull request`  
+    ![Create pull request](https://github.com/bryack/group_27/blob/main/Create_pull_request.png?raw=true)  
+    
+    После проверки возможности слияния веток должно быть указано `This branch has no conflicts with the base branch`  
+    ![No branches conflicts](https://github.com/bryack/group_27/blob/main/No_branches_conflicts.png?raw=true)  
+    
+    Нажать на кнопку `Merge pull request`  
+    ![Merge pull request](https://github.com/bryack/group_27/blob/main/Merge_pull_request.png?raw=true)  
+    
+    Нажать на кнопку `Confirm merge`  
+    ![Confirm merge](https://github.com/bryack/group_27/blob/main/Confirm_merge.png?raw=true)  
+    
+    После слияния веток должно быть указано `Pull request successfull merged and closed`  
+    ![Pull request success](https://github.com/bryack/group_27/blob/main/pull_requst_success.png?raw=true)  
+
+10. Синхронизировать Внешнюю и Локальную ветки Main  
+    `git checkout main`  
+    `git pull`  
