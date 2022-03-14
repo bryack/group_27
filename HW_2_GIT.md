@@ -89,6 +89,8 @@
     Нажать на кнопку `Compare & pull request`  
     ![Compare & pull request](https://github.com/bryack/group_27/blob/Checklists/Compare_pull_request.png?raw=true)  
     
+    В поле заголовка написать Add new file checklist.md from Checklists branch 
+
 нажимаем на кнопку
 в поле заголовка пишем Add new file checklist.md from Checklists branch
 10. Синхронизировать Внешнюю и Локальную ветки Main
